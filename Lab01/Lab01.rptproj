@@ -22,6 +22,38 @@
       <Name>Reporte 4.5.3.rdl</Name>
       <FullPath>Reporte 4.5.3.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.2.1.rdl</Name>
+      <FullPath>Reporte 4.2.1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.2.2.rdl</Name>
+      <FullPath>Reporte 4.2.2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.2.3.rdl</Name>
+      <FullPath>Reporte 4.2.3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.3.1.rdl</Name>
+      <FullPath>Reporte 4.3.1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.3.2.rdl</Name>
+      <FullPath>Reporte 4.3.2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.3.3.rdl</Name>
+      <FullPath>Reporte 4.3.3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.4.1.rdl</Name>
+      <FullPath>Reporte 4.4.1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.4.2.rdl</Name>
+      <FullPath>Reporte 4.4.2.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -32,7 +64,6 @@
         <TargetServerVersion>SSRS2016</TargetServerVersion>
         <TargetServerURL>http://localhost/reportserver</TargetServerURL>
         <TargetFolder>Lab01</TargetFolder>
-        <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
@@ -46,7 +77,6 @@
         <TargetServerVersion>SSRS2016</TargetServerVersion>
         <TargetServerURL>http://localhost/reportserver</TargetServerURL>
         <TargetFolder>Lab01</TargetFolder>
-        <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
@@ -60,7 +90,6 @@
         <TargetServerVersion>SSRS2016</TargetServerVersion>
         <TargetServerURL>http://localhost/reportserver</TargetServerURL>
         <TargetFolder>Lab01</TargetFolder>
-        <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>
         <TargetReportPartFolder>Elementos de informe</TargetReportPartFolder>
