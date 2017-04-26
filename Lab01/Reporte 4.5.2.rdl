@@ -47,7 +47,7 @@ FROM            employees</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Reporte 4.5.2</Value>
+                    <Value>Reporte4.5.2</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>

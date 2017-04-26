@@ -5,24 +5,26 @@
     <DataSource Name="DataSource">
       <DataSourceReference>DataSource</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>53c7b146-9132-4e1b-861b-a9218e17a42e</rd:DataSourceID>
+      <rd:DataSourceID>4f270755-d008-405b-82a3-a4f1da66d259</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource</DataSourceName>
-        <CommandText>SELECT (left(last_name,1)) + lower (right(last_name,(len(last_name)-1))) As 'Apellidos', LEN(last_name) as Longitud FROM employees WHERE last_name LIKE 'J%' OR last_name LIKE 'A%' OR last_name LIKE 'M%' ORDER BY last_name</CommandText>
+        <CommandText>select * from (select top(5) last_name,salary from employees where salary &lt; 5000 or salary &gt; 12000 order by last_name ASC) a
+union
+select * from (select top(5) last_name,salary from employees where salary &lt; 5000 or salary &gt; 12000 order by last_name DESC) b</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="Apellidos">
-          <DataField>Apellidos</DataField>
+        <Field Name="last_name">
+          <DataField>last_name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Longitud">
-          <DataField>Longitud</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="salary">
+          <DataField>salary</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -38,7 +40,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Reporte 4.5.4</Value>
+                    <Value>Reporte 4.4.3</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -83,7 +85,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Apellidos</Value>
+                                  <Value>last name</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -119,7 +121,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Longitud</Value>
+                                  <Value>salary</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -155,14 +157,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Apellidos">
+                        <Textbox Name="last_name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Apellidos.Value</Value>
+                                  <Value>=Fields!last_name.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -171,7 +173,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Apellidos</rd:DefaultName>
+                          <rd:DefaultName>last_name</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -187,14 +189,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Longitud">
+                        <Textbox Name="salary">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Longitud.Value</Value>
+                                  <Value>=Fields!salary.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -203,7 +205,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Longitud</rd:DefaultName>
+                          <rd:DefaultName>salary</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -277,5 +279,5 @@
   <Language>es-ES</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>a4e40961-08ca-4ee0-9a13-1e98935c58b9</rd:ReportID>
+  <rd:ReportID>1a7e478d-e3fc-4630-97dd-6a995daa35d9</rd:ReportID>
 </Report>
