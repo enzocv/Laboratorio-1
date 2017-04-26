@@ -22,6 +22,14 @@
       <Name>Reporte 4.5.3.rdl</Name>
       <FullPath>Reporte 4.5.3.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.5.4.rdl</Name>
+      <FullPath>Reporte 4.5.4.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.5.5.rdl</Name>
+      <FullPath>Reporte 4.5.5.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
