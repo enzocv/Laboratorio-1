@@ -50,6 +50,10 @@
       <Name>Reporte 4.4.1.rdl</Name>
       <FullPath>Reporte 4.4.1.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.4.2.rdl</Name>
+      <FullPath>Reporte 4.4.2.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
