@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="Reporte_452">
+    <Query>
+      <DataSourceReference>DataSource</DataSourceReference>
+      <CommandText>SELECT        employee_id, last_name, salary, (salary*1.155) as 'Nuevo Salario'
+FROM            employees</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="employee_id">
+        <DataField>employee_id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="last_name">
+        <DataField>last_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="salary">
+        <DataField>salary</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Nuevo_Salario">
+        <DataField>Nuevo Salario</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

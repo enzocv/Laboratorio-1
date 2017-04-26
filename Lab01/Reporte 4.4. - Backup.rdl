@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <rd:DataSourceID>60a29d20-059b-4374-b88e-46948a57765c</rd:DataSourceID>
+      <DataSourceReference>DataSource</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>b32dbca8-8437-4e52-8e0b-1c1d09be3b12</rd:ReportID>
+  <Width>5in</Width>
+  <Body>
+    <Height>0.79in</Height>
+    <ColumnSpacing>0.5in</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Reporte 4.4.</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.36in</Height>
+      </Textbox>
+      <Table Name="table1">
+        <Top>0.36in</Top>
+        <Style />
+        <Header>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Value>Empleado</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <BackgroundColor>SteelBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Value>Salaio Mensual</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.22in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Empleado">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>Empleado</rd:DefaultName>
+                      <Value>=Fields!Empleado.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Salaio_Mensual">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>10pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>Salaio_Mensual</rd:DefaultName>
+                      <Value>=Fields!Salaio_Mensual.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.21in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.21in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <TableColumns>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+        <DataSetName>DataSet1</DataSetName>
+      </Table>
+    </ReportItems>
+  </Body>
+  <Language>es-ES</Language>
+  <LeftMargin>1in</LeftMargin>
+  <RightMargin>1in</RightMargin>
+  <TopMargin>1in</TopMargin>
+  <BottomMargin>1in</BottomMargin>
+  <PageWidth>8.5in</PageWidth>
+  <PageHeight>11in</PageHeight>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Empleado">
+          <DataField>Empleado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Salaio_Mensual">
+          <DataField>Salaio Mensual</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>select emp.last_name AS Empleado, emp.salary AS 'Salaio Mensual'
+	FROM employees emp inner join departments dep
+	on (emp.salary between 5000 and 12000) and (dep.department_id in(20,50));</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <Timeout>0</Timeout>
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
