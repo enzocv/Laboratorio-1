@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=BEPIS08;Initial Catalog=Human_Resources</ConnectString>
+    <ConnectString>Data Source=DESKTOP-P6ULT0E;Initial Catalog=Human_Resources</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>88783fb9-451e-4437-bb55-b6f4c609b1e8</DataSourceID>
