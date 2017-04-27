@@ -5,24 +5,24 @@
     <DataSource Name="DataSource">
       <DataSourceReference>DataSource</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>3336014e-f802-45ae-943e-53b898b24da6</rd:DataSourceID>
+      <rd:DataSourceID>9bc15143-f14e-4697-a86c-574ad17e647a</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource</DataSourceName>
-        <CommandText>Select COUNT(employee_id) as NUM_Administradores ,MIN(salary) as Peor_sueldo  from dbo.employees where dbo.employees.manager_id=100</CommandText>
+        <CommandText>SELECT last_name,DATEDIFF(WEEK, employees.hire_date, SYSDATETIME()) as 'Tenencia' FROM employees WHERE department_id=90 ORDER BY 'Tenencia' DESC</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="NUM_Administradores">
-          <DataField>NUM_Administradores</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="last_name">
+          <DataField>last_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Peor_sueldo">
-          <DataField>Peor_sueldo</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+        <Field Name="Tenencia">
+          <DataField>Tenencia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -38,7 +38,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Reporte 4.7.6</Value>
+                    <Value>Reporte 4.5.8</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -64,10 +64,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.66667in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.70833in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -83,7 +83,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>NUM Administradores</Value>
+                                  <Value>Apellidos</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -92,9 +92,7 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox2</rd:DefaultName>
@@ -114,14 +112,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox3">
+                        <Textbox Name="Textbox3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Peor sueldo</Value>
+                                  <Value>Tenencia</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                     <FontSize>11pt</FontSize>
@@ -130,12 +128,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox3</rd:DefaultName>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -157,14 +153,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="NUM_Administradores">
+                        <Textbox Name="last_name">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!NUM_Administradores.Value</Value>
+                                  <Value>=Fields!last_name.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -173,7 +169,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>NUM_Administradores</rd:DefaultName>
+                          <rd:DefaultName>last_name</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -189,14 +185,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Peor_sueldo">
+                        <Textbox Name="Tenencia">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Peor_sueldo.Value</Value>
+                                  <Value>=Fields!Tenencia.Value</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -205,7 +201,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Peor_sueldo</rd:DefaultName>
+                          <rd:DefaultName>Tenencia</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -252,7 +248,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.36in</Top>
             <Height>0.43in</Height>
-            <Width>2in</Width>
+            <Width>3.375in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -279,5 +275,5 @@
   <Language>es-ES</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>d709e4b8-35e5-4da2-8228-ebd520bf5e05</rd:ReportID>
+  <rd:ReportID>76ede0b4-48f2-4e9c-ae9a-ea149d766503</rd:ReportID>
 </Report>
