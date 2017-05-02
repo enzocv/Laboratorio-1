@@ -139,6 +139,22 @@
       <FullPath>Reporte 4.5.9.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Reporte 4.6.2.rdl</Name>
+      <FullPath>Reporte 4.6.2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.6.3.rdl</Name>
+      <FullPath>Reporte 4.6.3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.6.4.rdl</Name>
+      <FullPath>Reporte 4.6.4.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporte 4.6.6.rdl</Name>
+      <FullPath>Reporte 4.6.6.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Reporte 4.7.1.rdl</Name>
       <FullPath>Reporte 4.7.1.rdl</FullPath>
     </ProjectItem>
@@ -197,22 +213,6 @@
     <ProjectItem>
       <Name>Reporte 4.6.1.rdl</Name>
       <FullPath>Reporte 4.6.1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Reporte 4.6.2.rdl</Name>
-      <FullPath>Reporte 4.6.2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Reporte 4.6.3.rdl</Name>
-      <FullPath>Reporte 4.6.3.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Reporte 4.6.4.rdl</Name>
-      <FullPath>Reporte 4.6.4.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Reporte 4.6.6.rdl</Name>
-      <FullPath>Reporte 4.6.6.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
